@@ -76,7 +76,7 @@ trainData<-as.data.frame(subset(SVMData, splitR == TRUE))
 testData<-as.data.frame(subset(SVMData, splitR == FALSE))
 
 
-trainData <- SMOTE(variab ~ ., data = SVMData, perc_over = 100)
+trainData <- SMOTE(variab ~ ., data = trainData, perc_over = 100)
 
 ##### Fully Automated Individual SVM Analysis #####
 
